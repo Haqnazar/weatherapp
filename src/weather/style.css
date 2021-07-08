@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.displayAll {
+    background-image: url('/src/image/picture.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.topNav{
+    color: white;
+    background-color: rgb(0, 0, 0, 0.3);
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 15px ;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgb(0, 0, 10);
+    border-bottom: 4px solid white;
+}
+h3{
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    
+    
+}
+.search > input {
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.3);
+    font-size: 24px;
+    width: 40%;
+    padding: 20px;
+    border: none;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    margin-bottom: 85px;
+    box-shadow: 0 0 25px rgb(0, 0, 10);
+    
+    
+}
+.search > .search::placeholder {
+    color: white;
+    
+}
+.search > input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid rgb(43, 233, 233);
+    color: white;
+
+}
+.city {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(0, 0, 10);
+    text-align: center;
+    padding: 20px;
+    margin: 5% auto;
+    color: white;
+    border-bottom: 4px solid white;
+}
+.info > img{
+    width: 75px;
+    cursor: pointer;
+}
+.city-name {
+    padding-bottom: 15px;
+}
+.city-name > span  {
+    font-family: sans-serif;
+}
+.city-name > sup {
+    font-family: sans-serif;
+}
+.city-temp > .temp {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+.city-temp > .description {
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+@media (max-width: 700px) {
+    .topNav {
+        font-size: 22px;
+        height: 50px;
+    }
+    
+    .city {
+        padding-bottom: 25px;
+        width: 150px;
+        height: 150px;
+    }
+    .info > img{
+        width: 65px;
+        cursor: pointer;
+    }
+    .city-name {
+        padding-bottom: 10px;
+    }
+    .city-name > span  {
+        font-family: sans-serif;
+    }
+    .city-name > sup {
+        font-family: sans-serif;
+    }
+    .city-temp > .temp {
+        font-size: 15px;
+        font-family: sans-serif;
+        padding: 5px;
+    }
+    .city-temp > .description {
+        font-family: sans-serif;
+        font-size: 15px;
+        padding: 7px;
+    }
+    .search > input {
+        margin-bottom: 25px;
+        font-size: 20px;
+        height: 15px;
+    }
+
+}
